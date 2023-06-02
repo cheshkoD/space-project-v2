@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключаем CSS слайдера -->
+    <link rel="stylesheet" href="/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.css">
+    <!-- Подключаем JS слайдера -->
+    <script defer src="/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.js"></script>
+    
+    <title>CHESHKO&BODNYA</title>
+</head>
+<body>
+
+<div id="english-content">
+  <!-- Английский контент -->
+
+    <!--  -- HEADER --  -->
+<div class='header'>
+    <div class='container'>
+        <div class='header-line'>
+
+            <a href="index.html">
+                <div class='header-logo'>
+                    <img src="logo.png" alt="">
+                </div>
+            </a>
+
+            <div class='nav'> 
+                
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a class='nav-item' href="index.html">HOME⤵</a>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#welcome-en">Welcome</a>
+                      <a href="#neighbours-en">Neighbours</a>
+                      <a href="#achievements-en">Achievements</a>
+                    </div>
+                  </div>
+
+                <a class='nav-item' href="index-galary.html">GALERY</a>
+                <a class='nav-item' href="index-about.html">ABOUT US</a>
+                <a class='nav-item' href="index-achievements.html">ACHIEVEMENTS</a>
+            </div>
+            
+            <div class='cart'>
+            </div>
+
+            <div class='phone'>
+                <div class='phone-holder'>
+                    <div class='number'><a class='num' href='#'>+380-111-11-11</a></div>
+                    
+                </div>
+
+                <div class='phone-text'>
+                    contact us 
+                </div>
+
+                <div class="">
+                    <div class="">
+                    </div>
+            </div>
+
+        </div>
+
+            <div class="language-button">
+                <button id="language-toggle-rus" onclick="showRussianContent()">RUS</button>
+                <button id="language-toggle-eng" onclick="showEnglishContent()">ENG</button>
+            </div>
+
+            <div class='burger-menu'>
+
+                <button id='burger' onclick="toggleMenu()">
+                    <img src="burger-img.png" alt="">
+                </button>
+
+                <div id='menu' class='burger-slide disp'>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a class='nav-item' href="index.html">HOME⤵</a>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#welcome-en">Welcome</a>
+                          <a href="#neighbours-en">Neighbours</a>
+                          <a href="#achievements-en">Achievements</a>
+                        </div>
+                      </div>
+
+                    <ul><a class='nav-item' href="index-galary.html">GALERY</a></ul>
+                    <ul><a class='nav-item' href="index-about.html">ABOUT US</a></ul>
+                    <ul><a class='nav-item' href="index-achievements.html">ACHIEVEMENTS</a></ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<div class='galery'>
+
+    <div class='container'>
+
+        <div class='galery-title'>
+            <p id="gallery-text-en"> GALERY <span>GALERY</span> GALERY<span> GALERY</span> GALERY</p>
+        </div>
+
+        <div class='galery-content'>
+
+            <div class='galery-left'>
+
+                <div class='galery-up'>
+                    <img class='img-gal high' src="space-10.jpg">
+                </div>
+
+                <div class='galery-down'>
+                    <img class='img-gal' src="space-20.jpg">
+                    <img class='img-gal' src="space-30.jpg">
+                </div>
+
+            </div>
+
+          
+<!---->
+            <div class="wrapper">
+                <input type="radio" name="point" id="slide1" checked>
+                <input type="radio" name="point" id="slide2">
+                <input type="radio" name="point" id="slide3">
+                <input type="radio" name="point" id="slide4">
+                <input type="radio" name="point" id="slide5">
+                <div class="slider">
+                    <div class="slides slide1"></div>
+                    <div class="slides slide2"></div>
+                    <div class="slides slide3"></div>
+                    <div class="slides slide4"></div>
+                    <div class="slides slide5"></div>
+                </div>  
+                <div class="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+            </div> 
+
+
+            <div class='galery-right'>
+
+                 <div class='galery-up'>
+                    <img class='img-gal' src="space-40.jpg">
+                    <img class='img-gal' src="space-30.jpg">
+                </div>
+
+                <div class='galery-down'>
+                    <img class='img-gal high' src="space-50.jpg">
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+<div class='cook'>
+
+    <div class='container'>
+
+        <div class='cook-title'>
+            <p id="pride-text-en">OUR <span>PRIDE</span> OUR <span>PRIDE</span> OUR <span>PRIDE</span> OUR <span>PRIDE</span> </p>
+        </div>
+
+        <div class="cook-chimas">
+
+            <div class="item-chimas">
+                <div class='cook-content'>
+                    <img src='neil.jpg'>
+                </div>
+
+                <div class='menu-text'>
+                    <h3>NEIL ARMSTRONG</h3>
+                    <p>first man on the moon</p>
+                </div>
+            </div>
+
+            <div class="item-chimas">
+                <div class='cook-content'>
+                    <img src='james-lo.jpg'>
+                </div>
+
+                <div class='menu-text'>
+                    <h3>JAMES LOVELL</h3>
+                    <p>was on the moon twice</p>
+                </div>
+            </div>
+
+            <div class="item-chimas">
+                <div class='cook-content'>
+                    <img src='sally-ride.jpg'>
+                </div>
+
+                <div class='menu-text'>
+                    <h3>SALLY RIDE</h3>
+                    <p>first woman in space</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="adapevnosug">
+            <div class="adapevnosug-edsa">
+            <input class="adapevnosug-nasav" type="radio" id="adapevnosug-1" name="adapevnosug" aria-hidden="true" hidden=""
+            checked="checked">
+            <div class="adapevnosug-kolas">
+            <img src="https://www.shortform.com/blog/wp-content/uploads/2022/02/book-a-brief-history-of-time-750x350.jpg">
+            </div>
+            <input class="adapevnosug-nasav" type="radio" id="adapevnosug-2" name="adapevnosug" aria-hidden="true" hidden="">
+            <div class="adapevnosug-kolas">
+            <img src="https://external-preview.redd.it/nasas-chandra-and-webb-telescopes-unveil-cosmic-wonders-v0-1g5h3CBKZ3I4kSbrJWDHuFlenyLHKna1jGiwkxIKNpo.jpg?auto=webp&s=47f28e1c1121501c22fc42355581b88001eb5b49">
+            </div>
+            <input class="adapevnosug-nasav" type="radio" id="adapevnosug-3" name="adapevnosug" aria-hidden="true" hidden="">
+            <div class="adapevnosug-kolas">
+            <img src="https://external-preview.redd.it/nasas-hubble-telescope-captured-glistening-star-cluster-v0-r87d-Z0hV-9d-Q3v9cwiZ4OELqgQYkyXkBLy12yChE0.jpg?auto=webp&s=bff304d321ce1eb6d31a8d9d1d661e1660e4b3e6">
+            </div>
+            <label for="adapevnosug-3" class="vealulu-kadsan prev nedsug-1">‹</label>
+            <label for="adapevnosug-2" class="vealulu-kadsan next nedsug-1">›</label>
+            <label for="adapevnosug-1" class="vealulu-kadsan prev nedsug-2">‹</label>
+            <label for="adapevnosug-3" class="vealulu-kadsan next nedsug-2">›</label>
+            <label for="adapevnosug-2" class="vealulu-kadsan prev nedsug-3">‹</label>
+            <label for="adapevnosug-1" class="vealulu-kadsan next nedsug-3">›</label>
+            <ol class="esamon-getusa">
+            <li>
+            <label for="adapevnosug-1" class="adapevnosug-bullet">•</label>
+            </li>
+            <li>
+            <label for="adapevnosug-2" class="adapevnosug-bullet">•</label>
+            </li>
+            <li>
+            <label for="adapevnosug-3" class="adapevnosug-bullet">•</label>
+            </li>
+            </ol>
+            </div>
+          </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<div id="russian-content">
+  <!-- Русский контент -->
+
+<!--  -- HEADER --  -->
+<div class='header'>
+    <div class='container'>
+        <div class='header-line'>
+
+            <a href="index.html">
+                <div class='header-logo'>
+                    <img src="logo.png" alt="">
+                </div>
+            </a>
+            
+            <div class='nav'> 
+                
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a class='nav-item' href="index.html">ГЛАВНАЯ⤵</a>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#welcome-ru">Добро пожаловать</a>
+                      <a href="#neighbours-ru">Соседи</a>
+                      <a href="#achievements-ru">Достижения</a>
+                    </div>
+                  </div>
+
+                <a class='nav-item' href="index-galary.html">ГАЛЕРЕЯ</a>
+                <a class='nav-item' href="index-about.html">О НАС</a>
+                <a class='nav-item' href="index-achievements.html">ДОСТИЖЕНИЯ</a>
+            </div>
+
+            <div class='cart'>
+            </div>
+
+            <div class='phone'>
+                <div class='phone-holder'>
+                    <div class='phone-img'>
+                        <img src="phone.png" alt="">
+                    </div>
+
+                    <div class='number'><a class='num' href='#'>+380-111-11-11</a></div>
+                </div>
+
+                <div class='phone-text'>
+                    свяжитесь с нами 
+                </div>
+
+                
+
+            </div>
+
+            <div class="language-button">
+                <button id="language-toggle-rus" onclick="showRussianContent()">RUS</button>
+                <button id="language-toggle-eng" onclick="showEnglishContent()">ENG</button>
+            </div>
+
+            <div class='burger-menu'>
+
+                <button id='burger' onclick="toggleMenu()">
+                    <img src="burger-img.png" alt="">
+                </button>
+
+                <div id='menu' class='burger-slide disp'>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a class='nav-item' href="index.html">ГЛАВНАЯ</a>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#welcome-en">Добро пожаловать</a>
+                          <a href="#neighbours-en">Соседи</a>
+                          <a href="#achievements-en">Достижения</a>
+                        </div>
+                      </div>
+
+                    <ul><a class='nav-item' href="index-galary.html">ГАЛЕРЕЯ</a></ul>
+                    <ul><a class='nav-item' href="index-about.html">О НАС</a></ul>
+                    <ul><a class='nav-item' href="index-achievements.html">ДОСТИЖЕНИЯ</a></ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<div class='galery'>
+
+    <div class='container'>
+
+        <div class='galery-title'>
+            <p id="gallery-text-ru">ГАЛЕРЕЯ <span>ГАЛЕРЕЯ</span> ГАЛЕРЕЯ<span> ГАЛЕРЕЯ</span> </p>
+        </div>
+
+        <div class='galery-content'>
+
+            <div class='galery-left'>
+
+                <div class='galery-up'>
+                    <img class='img-gal high' src="space-10.jpg">
+                </div>
+
+                <div class='galery-down'>
+                    <img class='img-gal' src="space-20.jpg">
+                    <img class='img-gal' src="space-30.jpg">
+                </div>
+
+            </div>
+
+            <div class="wrapper">
+                <input type="radio" name="point" id="slide1" checked>
+                <input type="radio" name="point" id="slide2">
+                <input type="radio" name="point" id="slide3">
+                <input type="radio" name="point" id="slide4">
+                <input type="radio" name="point" id="slide5">
+                <div class="slider">
+                    <div class="slides slide1"></div>
+                    <div class="slides slide2"></div>
+                    <div class="slides slide3"></div>
+                    <div class="slides slide4"></div>
+                    <div class="slides slide5"></div>
+                </div>  
+                <div class="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+            </div> 
+
+            <div class='galery-right'>
+
+                 <div class='galery-up'>
+                    <img class='img-gal' src="space-40.jpg">
+                    <img class='img-gal' src="space-30.jpg">
+                </div>
+
+                <div class='galery-down'>
+                    <img class='img-gal high' src="space-50.jpg">
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+<div class='cook'>
+
+    <div class='container'>
+
+        <div class='cook-title'>
+            <p id="pride-text-ru">НАША <span>ГОРДОСТЬ</span> НАША <span>ГОРДОСТЬ</span> </p>
+        </div>
+
+        <div class="cook-chimas">
+
+            <div class="item-chimas">
+                <div class='cook-content'>
+                    <img src='neil.jpg'>
+                </div>
+
+                <div class='menu-text'>
+                    <h3>Нил Армстронг</h3>
+                    <p>первый человек на луне</p>
+                </div>
+            </div>
+
+            <div class="item-chimas">
+                <div class='cook-content'>
+                    <img src='james-lo.jpg'>
+                </div>
+
+                <div class='menu-text'>
+                    <h3>Джеймс Ловелл</h3>
+                    <p>побывал на луне дважды</p>
+                </div>
+            </div>
+
+            <div class="item-chimas">
+                <div class='cook-content'>
+                    <img src='sally-ride.jpg'>
+                </div>
+
+                <div class='menu-text'>
+                    <h3>Салли Райд</h3>
+                    <p>первая женщина в космосе</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+<button class="scroll-to-top" onclick="scrollToTop()">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <path d="M14.8285 11.9481L16.2427 10.5339L12 6.29122L7.7574 10.5339L9.17161 11.9481L11 10.1196V17.6568H13V10.1196L14.8285 11.9481Z" fill="currentColor"/>
+
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7782 4.22183C15.4824 -0.0739415 8.51759 -0.0739422 4.22183 4.22183C-0.0739415 8.51759 -0.0739422 15.4824 4.22183 19.7782C8.51759 24.0739 15.4824 24.0739 19.7782 19.7782C24.0739 15.4824 24.0739 8.51759 19.7782 4.22183ZM18.364 5.63604C14.8492 2.12132 9.15076 2.12132 5.63604 5.63604C2.12132 9.15076 2.12132 14.8492 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604Z" fill="currentColor" />
+    </svg>
+</button>
+
+
+<div class='footer'>
+    KROK University 2023
+</div>
+
+
+<script src='app.js'></script>
+
+</body>
+</html>
