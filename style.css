@@ -90,7 +90,7 @@ html {
     background-color: #3649b6;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    border: 1px solid red;
+    
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -592,6 +592,14 @@ body {
     padding-bottom: 10px;
 }
 
+.item-chimas .menu-text {
+    margin-top: -30px;
+}
+
+.item-chimas .menu-text h3{
+    margin-bottom: -20px;
+}
+
 .menu-subtext {
     font-size: 16px;
 }
@@ -656,8 +664,14 @@ body {
 }
 
 .galery-content {
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.galery-content img{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .galery-left {
@@ -740,6 +754,108 @@ button {
 .disp {
     display: none;
 }
+
+
+
+/* -- ======================== NEW SLIDER ========================= -- */
+.adaptivn-slayder{
+    max-width: 95%;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    margin-bottom: 15px;
+
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  .adaptivn-slayder .parag img {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+    border: none !important;
+    box-shadow: none !important;
+
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    
+  }
+  
+  .adaptivn-slayder .prev, .adaptivn-slayder .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  .adaptivn-slayder .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .adaptivn-slayder .prev:hover,
+  .adaptivn-slayder .next:hover {
+    background-color: rgba(25, 24, 24, 0.8);
+  }
+  
+  .beksun-slayda{
+    position: absolute;
+    color: #f4f4f7;
+    font-size: 24px;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px #141415, 0 0 1em #141415;
+  }
+  
+  .uneizmen-akemada {
+    text-align: center;
+  }
+  .noguma-pomoki-kadra{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .deystvuyus,
+  .noguma-pomoki-kadra:hover {
+    background-color: #aaa;
+  }
+  
+  .adaptivn-slayder .parag {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+    opacity: .4
+    }
+    to {
+    opacity: 1
+    }
+  }
+  @keyframes fade {
+    from {
+    opacity: .4
+    }
+    to {
+    opacity: 1
+    }
+  }
+
 
 
 /* -- ======================== Adaptive ========================= -- */
@@ -874,7 +990,6 @@ button {
         margin-left: auto;
         margin-bottom: 30px;
 
-        border-radius: 10px;
     }
 
     .menu-text {
@@ -905,8 +1020,6 @@ button {
 
 
 @media (max-width: 1000px) {
-
-    
 
     .menu-title p {
         font-size: 45px;
@@ -952,7 +1065,10 @@ button {
     .history-title {
         font-size: 51px;
     }
-
+    
+    .item-chimas .menu-text {
+        margin-top: -60px;
+    }
 }
 
 
@@ -985,146 +1101,10 @@ button {
         font-size: 23px;
     }
 
+    .beksun-slayda{
+        font-size: 23px;
+      }
 }
-
-
-/* -- ======================== SLIDER ========================= -- */
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.wrapper {
-    height: 350px;
-    margin: 100px auto 0;
-    position: relative;
-    width: 700px;
-    box-shadow: 0 0 10px rgba(61, 76, 162, 0.8);
-}
-
-.slider {
-    background-color: #ddd;
-    height: inherit;
-    overflow: hidden;
-    position: relative;
-    width: inherit;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-    -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-}
-
-
-.wrapper > input {
-    display: none;
-}
-
-.slides {
-    height: inherit;
-    position: absolute;
-    width: inherit;
-}
-
-.slide1 { background-image: url(https://www.shortform.com/blog/wp-content/uploads/2022/02/book-a-brief-history-of-time-750x350.jpg); }
-.slide2 { background-image: url(https://external-preview.redd.it/nasas-chandra-and-webb-telescopes-unveil-cosmic-wonders-v0-1g5h3CBKZ3I4kSbrJWDHuFlenyLHKna1jGiwkxIKNpo.jpg?auto=webp&s=47f28e1c1121501c22fc42355581b88001eb5b49); }
-.slide3 { background-image: url(https://external-preview.redd.it/nasas-hubble-telescope-captured-glistening-star-cluster-v0-r87d-Z0hV-9d-Q3v9cwiZ4OELqgQYkyXkBLy12yChE0.jpg?auto=webp&s=bff304d321ce1eb6d31a8d9d1d661e1660e4b3e6); }
-.slide4 { background-image: url(https://ceospublishers.com/Journals/Annals-of-Astronomy-and-Astrophysics/images/journalimage.jpg); }
-.slide5 { background-image: url(https://www.shortform.com/blog/wp-content/uploads/2022/07/galaxy-in-space-750x350.jpg); }
-
-
-.wrapper .controls {
-    left: 50%;
-    margin-left: -98px;
-    position: absolute;
-}
-
-.wrapper label {
-    cursor: pointer;
-    display: inline-block;
-    height: 8px;
-    margin: 25px 12px 0 16px;
-    position: relative;
-    width: 8px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.wrapper label:after {
-    border: 2px solid #ddd;
-    content: " ";
-    display: block;
-    height: 12px;
-    left: -4px;
-    position: absolute;
-    top: -4px;
-    width: 12px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.wrapper label {
-    cursor: pointer;
-    display: inline-block;
-    height: 8px;
-    margin: 25px 12px 0 16px;
-    position: relative;
-    width: 8px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-transition: background ease-in-out .5s;
-    -moz-transition: background ease-in-out .5s;
-    -o-transition: background ease-in-out .5s;
-    transition: background ease-in-out .5s;
-}
-
-.wrapper label:hover, 
-#slide1:checked ~ .controls label:nth-of-type(1),
-#slide2:checked ~ .controls label:nth-of-type(2),
-#slide3:checked ~ .controls label:nth-of-type(3),
-#slide4:checked ~ .controls label:nth-of-type(4),
-#slide5:checked ~ .controls label:nth-of-type(5) {
-    background: #ddd;
-}
-
-.slides {
-    height: inherit;
-    opacity: 0;
-    position: absolute;
-    width: inherit;
-    z-index: 0;
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5);
-    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-}
-
-#slide1:checked ~ .slider > .slide1,
-#slide2:checked ~ .slider > .slide2,
-#slide3:checked ~ .slider > .slide3,
-#slide4:checked ~ .slider > .slide4,
-#slide5:checked ~ .slider > .slide5 {
-    opacity: 1;
-    z-index: 1;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-}
-
 
 
 /* -- ======================== SVG Button ========================= -- */
@@ -1156,138 +1136,6 @@ button {
     background-color: #7a7a7a;
     box-shadow: 0 0 10px rgba(208, 209, 214, 0.8);
 }
-
-
-
-
-
-
-
-
-.adapevnosug {
-    position: relative;
-    box-shadow: 0px 0px 10px rgba(167, 167, 167, 0.71);
-    margin-top: 26px;
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .adapevnosug-edsa {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    border-radius: 20px;
-  }
-  
-  .adapevnosug-nasav:checked + .adapevnosug-kolas {
-    position: static;
-    opacity: 100;
-  }
-  
-  .adapevnosug-kolas {
-    position: absolute;
-    opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
-  }
-  
-  .adapevnosug-kolas img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-  }
-  
-  .vealulu-kadsan {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 50%;
-    color: #393939;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 10;
-  }
-  
-  .vealulu-kadsan.prev {
-    left: 2%;
-  }
-  
-  .vealulu-kadsan.next {
-    right: 2%;
-  }
-  
-  .vealulu-kadsan:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #f3be81;
-  }
-  
-  #adapevnosug-1:checked ~ .nedsug-1,
-  #adapevnosug-2:checked ~ .nedsug-2,
-  #adapevnosug-3:checked ~ .nedsug-3 {
-    display: block;
-  }
-  
-  .esamon-getusa {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
-  }
-  
-  .esamon-getusa li {
-    display: inline-block;
-    margin: 0 5px;
-  }
-  
-  .adapevnosug-bullet {
-    color: #393939;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-  }
-  
-  .adapevnosug-bullet:hover {
-    color: #fff;
-  }
-  
-  #adapevnosug-1:checked
-    ~ .nedsug-1
-    ~ .esamon-getusa
-    li:nth-child(1)
-    .adapevnosug-bullet,
-  #adapevnosug-2:checked
-    ~ .nedsug-2
-    ~ .esamon-getusa
-    li:nth-child(2)
-    .adapevnosug-bullet,
-  #adapevnosug-3:checked
-    ~ .nedsug-3
-    ~ .esamon-getusa
-    li:nth-child(3)
-    .adapevnosug-bullet {
-    color: #99f6ff;
-  }
-
-
-
-
-
-
 
 
 
