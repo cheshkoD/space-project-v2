@@ -176,10 +176,6 @@ window.addEventListener("load", function() {
 
 
 
-
-
-
-
 // ------------------------------------------------------------------------
 // NEW SLIDER
   var slideIndex = 1;
